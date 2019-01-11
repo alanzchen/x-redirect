@@ -8,6 +8,10 @@
   Redirecting...
   </body>
   <script>
-  window.location.href = window.location.pathname.split("/")[1] + "://" + window.location.pathname.split("/").slice(2).join("/");
+  if (window.location.pathname.split("/")[1] == "index.html"){
+    window.location.href = "https://github.com/alanzchen/x-redirect/";
+  } else {
+    window.location.href = window.location.pathname.split("/")[1] + "://" + window.location.pathname.split("/").slice(2).join("/");
+  };
   </script>
 </html>
