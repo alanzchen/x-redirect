@@ -12,6 +12,7 @@
     window.location.href = "https://github.com/alanzchen/x-redirect/";
   } else {
     window.location.href = window.location.pathname.split("://")[0].substr(1) + "://" + window.location.pathname.split("://")[1];
+    window.close();
   };
   </script>
 </html>
