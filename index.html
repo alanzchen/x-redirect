@@ -13,7 +13,6 @@
   } else {
     var redir_url = window.location.pathname.split("://")[0].substr(1) + "://" + window.location.pathname.split("://")[1] + window.location.search;
     window.location.href = redir_url;
-    open(redir_url, '_self').close();
   };
   </script>
 </html>
